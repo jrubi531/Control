@@ -1,0 +1,9 @@
+.seccion-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Sin comas */
+    grid-template-rows: 1fr 1fr;    /* Sin comas */
+    gap: 2rem;
+    margin-top: 2rem;
+    place-items: center; /* Centra tanto horizontal como verticalmente */
+
+}

@@ -1,17 +1,22 @@
-function seccion(){
-                       //mètodo
-let seccion = document.createElement("section");
+// Importa la función 'header' desde el archivo headerComponent.js
+import { header } from "./Componentes/header/headerComponent.js";
+import { seccion1 } from "./Componentes/seccion/seccion1.js";
+import { item } from "./modulos-item/itemModulo.js";
 
-let h1 = document.createElement("h1");
-h1.className = "titulo";
-h1.innerText = "hola mundo";
-seccion.appendChild(h1);
 
-let p = document.createElement("p");
-p.innerText = "introduccion a javascript";
-seccion.appendChild(p);
+// Define una función que crea una sección <section>
+function seccion() {
+  // Crea un elemento <section>
+  let seccion = document.createElement("section");
 
-return seccion;
+  // Agrega el componente <header> dentro de la sección
+  seccion.appendChild(header());
+  seccion.appendChild(seccion1());
+ seccion.appendChild(item());
+
+  // Devuelve toda la sección construida
+  return seccion;
 }
 
+// Inserta la sección generada en el <body> del documento
 document.body.appendChild(seccion());
