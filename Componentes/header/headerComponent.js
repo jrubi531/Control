@@ -1,14 +1,15 @@
 export function header() {
   // Crear el elemento header
-  const header = document.createElement("header");
+  let header = document.createElement("header");
+  header.className = "header"; 
 
   // Crear el título
-  const titulo = document.createElement("h1");
+  let titulo = document.createElement("h1");
   titulo.className = "titulo";
   titulo.innerText = "@Yane";
 
   // Crear el div del logo
-  const divLogo = document.createElement("div");
+  let divLogo = document.createElement("div");
   divLogo.className = "div-logo";
   divLogo.innerText = "🦊"; 
   

@@ -11,3 +11,6 @@ html{
 .titulo{
     color: blueviolet;
 }
+.ocultar{
+    display: none;
+}
